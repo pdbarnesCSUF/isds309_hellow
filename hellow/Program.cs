@@ -4,6 +4,7 @@
  * Date:    8/28/2018
  */
 using System;
+using static System.Console;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,25 +18,28 @@ namespace isds309_hellow
         {
             //variables
             string name, class1, class2;
-            string class1grade, class2grade; //int later
+            decimal class1grade, class2grade;
 
             //get info
-            Console.Write("Please enter your name:");
-            name = Console.ReadLine();
-            Console.Write("Please enter your first class:");
-            class1 = Console.ReadLine();
-            Console.Write("Please enter your first class grade:");
-            class1grade = Console.ReadLine();
-            Console.Write("Please enter your second class:");
-            class2 = Console.ReadLine();
-            Console.Write("Please enter your second class grade:");
-            class2grade = Console.ReadLine();
+            Write("Please enter your name:");
+            name = ReadLine();
+            Write("Please enter your first class:");
+            class1 = ReadLine();
+            Write("Please enter your first class grade:");
+            class1grade = Decimal.Parse(ReadLine());
+            Write("Please enter your second class:");
+            class2 = ReadLine();
+            Write("Please enter your second class grade:");
+            class2grade = Decimal.Parse(ReadLine());
 
             //------------output------------
-            Console.WriteLine("------------------");
-            Console.WriteLine(name);
-            Console.WriteLine("1. " + class1 + " " + class1grade);
-            Console.WriteLine("2. " + class2 + " " + class2grade);
+            WriteLine("------------------");
+            WriteLine(name);
+            WriteLine("1. " + class1 + " " + class1grade);
+            WriteLine("2. " + class2 + " " + class2grade);
+            WriteLine("Avg:" + ((class1grade + class2grade) / 2));
+
+            ReadLine();
         }
     }
 }
