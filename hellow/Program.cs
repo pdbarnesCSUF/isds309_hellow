@@ -30,8 +30,9 @@ namespace isds309_hellow
             class2 = Console.ReadLine();
             Console.Write("Please enter your second class grade:");
             class2grade = Console.ReadLine();
-            
+
             //------------output------------
+            Console.WriteLine("------------------");
             Console.WriteLine(name);
             Console.WriteLine("1. " + class1 + " " + class1grade);
             Console.WriteLine("2. " + class2 + " " + class2grade);
