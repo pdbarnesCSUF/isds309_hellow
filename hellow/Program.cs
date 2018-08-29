@@ -17,18 +17,18 @@ namespace isds309_hellow
         {
             //variables
             string name, class1, class2;
-            string class1grade, class2grade; //able to int later when convert
+            string class1grade, class2grade; //int later
 
             //get info
-            Console.WriteLine("Please enter your name:");
+            Console.Write("Please enter your name:");
             name = Console.ReadLine();
-            Console.WriteLine("Please enter your first class:");
+            Console.Write("Please enter your first class:");
             class1 = Console.ReadLine();
-            Console.WriteLine("Please enter your first class grade:");
+            Console.Write("Please enter your first class grade:");
             class1grade = Console.ReadLine();
-            Console.WriteLine("Please enter your second class:");
+            Console.Write("Please enter your second class:");
             class2 = Console.ReadLine();
-            Console.WriteLine("Please enter your second class grade:");
+            Console.Write("Please enter your second class grade:");
             class2grade = Console.ReadLine();
             
             //------------output------------
