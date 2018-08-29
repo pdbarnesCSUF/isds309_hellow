@@ -37,7 +37,7 @@ namespace isds309_hellow
             WriteLine(name);
             WriteLine("1. " + class1 + " " + class1grade);
             WriteLine("2. " + class2 + " " + class2grade);
-            WriteLine("Avg:" + ((class1grade + class2grade) / 2));
+            WriteLine("Avg:" + ((class1grade + class2grade) / 2.0));
 
             ReadLine();
         }
