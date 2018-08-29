@@ -18,7 +18,7 @@ namespace isds309_hellow
         {
             //variables
             string name, class1, class2;
-            decimal class1grade, class2grade;
+            double class1grade, class2grade;
 
             //get info
             Write("Please enter your name:");
@@ -26,11 +26,11 @@ namespace isds309_hellow
             Write("Please enter your first class:");
             class1 = ReadLine();
             Write("Please enter your first class grade:");
-            class1grade = Decimal.Parse(ReadLine());
+            class1grade = Convert.ToDouble(ReadLine());
             Write("Please enter your second class:");
             class2 = ReadLine();
             Write("Please enter your second class grade:");
-            class2grade = Decimal.Parse(ReadLine());
+            class2grade = Convert.ToDouble(ReadLine());
 
             //------------output------------
             WriteLine("------------------");
